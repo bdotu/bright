@@ -1,1 +1,16 @@
+# Site Info
+title: "bright"
+description: "another minimalist Jekyll theme."
+author: "Nathan Drake"
+# logo: " {{ site.url }}/assets/images/profile.jpeg" # link to your picture goes here
+
+# Site Settings
+url: ""
+baseurl: ""
+permalink: "/:title"
+
+# Enable Google Analytics
+# tracking_id: 'UA-XXXXXXXXXX'
+
+# Build Settings
 theme: bright
