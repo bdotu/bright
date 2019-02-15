@@ -4,4 +4,6 @@ source "https://rubygems.org"
 
 # gem "bright"
 
+gem "jekyll-paginate"
+
 gemspec

@@ -85,7 +85,7 @@ body {
   /* line-height: 1.6; */
 }
 
-/* Image shape */
+/* Image Styles */
 .round {
 border-radius: 50%;
 width: 250px;
@@ -106,13 +106,6 @@ animation-name: bounce;
   opacity: 0.75;
 }
 
-section {
-  width: 100%;
-  height: 100vh;
-  border-radius: 50%;
-  background: url(../images/profile.jpeg);
-}
-
 #profileicon {
   width: 64px;
   height: 64px;
@@ -121,6 +114,13 @@ section {
   margin-top: inherit;
   margin-bottom: 5px;
   /* margin-right: 20px; */
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  border-radius: 50%;
+  background: url(../images/profile.jpeg);
 }
 
 section:hover {
@@ -244,8 +244,8 @@ section:hover {
   color: inherit;
 }
 
-/* About Me Text Styles */
-#aboutme {
+/* Page Title Styles */
+#pagetitle {
   /* position: relative; */
   font-family: Open Sans;
   font-weight: 300;
@@ -354,6 +354,37 @@ hr {
 #email {
   color: rgb(221, 83, 75);
 }
+
+/* Blog Post List Styles */
+ul {
+  list-style: none;
+  margin: inherit;
+  padding: inherit;
+}
+
+ul li {
+  margin: 25px 0;
+}
+
+/* .post-list {
+  display: inline-block;
+  width: inherit;
+  align-content: flex-end;
+} */
+
+ul li .post-title {
+  /* display: block; */
+  /* float: left; */
+  max-width: 100%;
+  word-wrap: normal !important;
+}
+
+ul li .post-date {
+  /* display: inline-block; */
+  float: right;
+  margin: 0 0 0 300px;
+}
+
 
 /* Footer Styles */
 .footer {

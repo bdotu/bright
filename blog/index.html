@@ -1,0 +1,43 @@
+---
+layout: default
+title: blog
+---
+<div class="row">
+  <div class="twelve columns">
+    <a href="{{ site.url }}"><img src="{{ site.url }}/assets/images/profile.jpeg" class="round" id="profileicon" /></a>
+    <p id="pagetitle">my blog</p>
+  </div>
+</div>
+
+<hr noshade />
+
+<div class="row">
+  <div class="twelve columns">
+    {% for post in paginator.posts %}
+    <ul>
+      <li>
+        <div class="post-date">
+          <span>{{ post.date | date: '%b %d %Y' }}</span>
+        </div>
+        <div class="post-title">
+          <h2><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></h2>
+        </div>
+      </li>
+    </ul>
+      <!-- <div>
+        <h2><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></h2>
+      </div> -->
+      <!-- <div class="post-date">
+        <time>{{ post.date | date: '%b %d %Y' }}</time>
+      </div> -->
+    {% endfor %}
+  </div>
+</div>
+
+<br />
+
+<div class="row">
+  <div class="twelve columns">
+    {% include pagination.html %}
+  </div>
+</div>

@@ -1,3 +1,5 @@
+# User Settings
+
 # Site Info
 title: "bright"
 description: "another minimalist Jekyll theme."
@@ -7,7 +9,7 @@ author: "Nathan Drake"
 # Site Settings
 url: ""
 baseurl: ""
-permalink: "/:title"
+permalink: "/:title:output_ext"
 
 # Enable Google Analytics
 # tracking_id: 'UA-XXXXXXXXXX'
@@ -19,5 +21,14 @@ github_url: "https://github.com"
 linkedin_url: "https://linkedin.com"
 myemail: "myemail@example.com"
 
+# Blog Settings
+reading-time: true
+paginate: 5
+paginate_path: "/blog/page:num/"
+
 # Build Settings
 theme: bright
+
+# Plugins
+plugins:
+  - jekyll-paginate

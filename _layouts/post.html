@@ -1,5 +1,31 @@
 ---
-layout: page
+layout: default
 ---
 
-{{ content }}
+<article>
+  <div class="row">
+    <div class="twelve columns">
+      <h1 class="blogtitle">{{ page.title }}</h1>
+      <span>
+        <time> {{ page.date | date: '%A. %B %-d, %Y' }}</time>
+        {% if site.reading-time %} - {% include reading-time.html %}{% endif %}
+      </span>
+      <p>{{ content }}</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="twelve columns">
+      {% if page.next.url %}
+        <a href="{{ page.next.url | prepend: site.baseurl | prepend: site.url }}" title="NEXT: {{ page.next.title }}">&lArr;</a>
+        <span>&middot;</span>
+      {% endif %}
+      <a href="{{ "/blog" | prepend: site.baseurl | prepend: site.url }}" title="Back to Index">Index</a>
+      {% if page.previous.url%}
+      <span>&middot;</span>
+      <a href="{{ page.previous.url | prepend: site.baseurl | prepend: site.url }}" title="PREV: {{ page.previous.title }}">&rArr;</a>
+      {% endif %}
+    </div>
+  </div>
+
+</article>
