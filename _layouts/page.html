@@ -1,8 +1,17 @@
 ---
 layout: default
 ---
-{% include header.html %}
+<div class="row">
+  <div class="twelve columns">
+    <a href="{{ site.url }}"><img src="{{ site.url }}/assets/images/profile.jpeg" class="round" id="profileicon"/></a>
+    <p id="aboutme">About me</p>
+  </div>
+</div>
 
-{{ content }}
+<hr noshade/>
 
-{% include footer.html %}
+<div class="row">
+  <div class="twelve columns">
+    <div id="bio"><p>{{ content }}</p></div>
+  </div>
+</div>

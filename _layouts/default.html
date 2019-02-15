@@ -6,8 +6,16 @@ layout: compress
   <head> {% include header.html %} </head>
 
   <body>
-    {{ content }}
+    <div class="container">
+      <!-- {% include profile.html %} -->
+      {{ content }}
+    </div>
+
+    <div class="row">
+      <div class="twelve columns">
+        <footer> {% include footer.html %} </footer>
+      </div>
+    </div>
   </body>
 
-  <footer> {% include footer.html %} </footer>
 </html>

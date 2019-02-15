@@ -12,5 +12,12 @@ permalink: "/:title"
 # Enable Google Analytics
 # tracking_id: 'UA-XXXXXXXXXX'
 
+# Add the links to your social media
+fb_url: "https://facebook.com"
+twitter_url: "https://twitter.com"
+github_url: "https://github.com"
+linkedin_url: "https://linkedin.com"
+myemail: "myemail@example.com"
+
 # Build Settings
 theme: bright
