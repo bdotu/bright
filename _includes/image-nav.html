@@ -1,0 +1,5 @@
+{% if page.url == '/index.html' or page.url == '/' %}
+  {% assign prompt = 'about me' %}
+{% else %}
+  {% assign prompt = 'home' %}
+{% endif %}

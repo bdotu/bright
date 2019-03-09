@@ -4,7 +4,7 @@
 title: "bright"
 description: "another minimalist Jekyll theme."
 author: "Nathan Drake"
-# logo: " {{ site.url }}/assets/images/profile.jpeg" # link to your picture goes here
+picture: "assets/images/profile.jpeg" # link to your picture goes here
 
 # Site Settings
 url: ""

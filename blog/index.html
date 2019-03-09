@@ -4,8 +4,11 @@ title: blog
 ---
 <div class="row">
   <div class="twelve columns">
-    <a href="{{ site.url }}"><img src="{{ site.url }}/assets/images/profile.jpeg" class="round" id="profileicon" /></a>
-    <p id="pagetitle">my blog</p>
+    <a href="{{ site.url }}" class="hverhome">
+      <img src="{{ site.url }}/{{ site.picture }}" class="round" id="profileicon"/>
+      <span>home</span>
+    </a>
+    <p id="pagetitle">blog</p>
   </div>
 </div>
 
@@ -16,20 +19,14 @@ title: blog
     {% for post in paginator.posts %}
     <ul>
       <li>
-        <div class="post-date">
+        <div class="post-date float-right">
           <span>{{ post.date | date: '%b %d %Y' }}</span>
         </div>
         <div class="post-title">
-          <h2><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></h2>
+          <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
         </div>
       </li>
     </ul>
-      <!-- <div>
-        <h2><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></h2>
-      </div> -->
-      <!-- <div class="post-date">
-        <time>{{ post.date | date: '%b %d %Y' }}</time>
-      </div> -->
     {% endfor %}
   </div>
 </div>
