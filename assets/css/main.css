@@ -70,9 +70,6 @@
 
 /* Base Style */
 html {
-  /* margin: 0;
-  padding: 0;
-  height: 100%; */
 }
 
 body {
@@ -80,13 +77,11 @@ body {
   font-size: 14px;
   font-style: normal;
   font-weight: normal;
-  /* line-height: 1.6; */
 }
 
 /* Image Style */
 .round {
 border-radius: 50%;
-/* display: block; */
 width: 250px;
 height: 250px;
 overflow: hidden;
@@ -109,7 +104,6 @@ animation-name: bounce;
 /* Hovering over image on homepage  */
 a.hverabt {
   text-decoration: none;
-  /* background: #ddd; */
   color: inherit;
 }
 
@@ -120,20 +114,9 @@ a.hverabt span {
 
 a.hverabt:hover span {
   display: inline-block;
-  /* z-index: 0; */
-  /* padding:0; */
-  /* left: 0; */
-  /* margin: 10px; */
   width: 50px;
   position: absolute;
   top: 125px;
-  /* text-decoration: none; */
-  /* background: inherit; */
-  /* box-sizing: border-box; */
-  /* border: dashed; */
-  /* border: 5px solid #b3b3b3; */
-  /* border-top: 0; */
-  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); */
 
   -webkit-animation-name: fadeOut;
   -webkit-animation-duration: 3s;
@@ -150,10 +133,8 @@ a.hverabt:hover span {
   width: 64px;
   height: 64px;
   float: none;
-  /* align-self: center; */
   margin-top: inherit;
   margin-bottom: 5px;
-  /* margin-right: 20px; */
 }
 
 /* Hovering over #profileicon */
@@ -196,15 +177,8 @@ section:hover {
 }
 
 .glitch {
-  /* border-radius: 50%; */
   position: relative;
-  /* width: 100%; */
-  /* height: 100vh; */
-  /* background: url(../images/profile.jpeg); */
   background-size: 100%;
-  /* background-position: top center; */
-  /* background-repeat: no-repeat; */
-  /* overflow: hidden; */
 }
 
 .glitch:before,
@@ -218,9 +192,6 @@ section:hover {
   height: inherit;
   background: url(../images/profile.jpeg);
   background-size: 100%;
-  /* background-position: top center; */
-  /* background-repeat: no-repeat; */
-  /* overflow: hidden; */
   opacity: .5;
   mix-blend-mode: hard-light;
   -webkit-animation: animate-glitch .2s linear infinite;
@@ -369,20 +340,12 @@ section:hover {
 
 /* Page Title Style */
 #pagetitle {
-  /* position: relative; */
   font-family: Open Sans;
   font-weight: 300;
   font-size: 2.0em;
   float: none;
-  /* margin-left: 0; */
   margin-top: 5px;
   margin-bottom: 5px;
-  /* margin-right: 500px; */
-  /* text-decoration: underline; */
-  /* text-align: left; */
-  /* margin: inherit; */
-  /* text-align: left; */
-  /* padding-right: 100px; */
 }
 
 /* Line Break */
@@ -398,7 +361,6 @@ hr {
     font-weight: 200;
     font-size: 1.2em;
     word-wrap: normal;
-    /* white-space: normal; */
     text-align: left;
 }
 
@@ -414,39 +376,19 @@ hr {
   font-weight: 200;
 }
 
-
-/* OOOOOOOOOOOOOOOOOOOOOBEGINSOOOOOOOOOOOOOOO */
-/* .menu-content {
-  max-height: 100%;
-  overflow: hidden;
-} */
-/* .collapsible-menu {
-  background-color: inherit;
-} */
-/* .collapsible-menu ul {
-  list-style-type: none;
-  padding: 0;
-}
-.collapsible-menu a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-} */
+/* Collapsible Mobile Menu */
 .collapsible-menu .rise {
-  /* font-family: 'Raleway Dots', cursive; */
   font-size: 2em;
   display: none;
   cursor: pointer;
-  /* padding: 10px 0 10px 50px; */
 }
 
 .collapsible-menu .fall {
-  /* font-family: 'Raleway Dots', cursive; */
   font-size: 2em;
   display: none;
   cursor: pointer;
-  /* padding: 10px 0 10px 50px; */
 }
+
 input#menu {
   display: none;
 }
@@ -460,41 +402,21 @@ input:checked ~ .menu-content {
   max-height: 100%;
 }
 
-/* OOOOOOOOOOOOOOOOOOOOOOENDSOOOOOOOOOOOOOOOO */
-
 /* Navigation Style */
 .nav {
   display: inline-block;
-  /* display: flex; */
   list-style: none;
-  /* width: inherit; */
   text-align: center;
   margin: 0 auto;
-  /* max-width: 100%; */
-  /* padding: 0 auto; */
-  /* overflow: hidden; */
-  /* white-space: nowrap; */
-  /* overflow-x: auto; */
-  /* overflow-y: hidden; */
-  /* background-color: inherit; */
 }
 
-/* .nav ul li {
-  display: inline;
-} */
 
 .nav li {
   float: left;
-  /* overflow: hidden; */
-  /* white-space: nowrap; */
 }
 
 .nav li a {
-  /* display: inline-block; */
-  /* text-align: center; */
-  /* color: inherit; */
   padding: 15px 30px;
-  /* padding: 28px; */
   text-decoration: none;
 }
 
@@ -504,20 +426,16 @@ input:checked ~ .menu-content {
     float: none;
     width: 100%;
   }
-  /* OOOOOOOOOOOOOOOOOOOOOBEGINSOOOOOOOOOOOOOOO */
+
   .menu-content {
     max-height: 0;
     overflow: hidden;
   }
+
   .collapsible-menu .rise {
     display: block;
   }
-  /* OOOOOOOOOOOOOOOOOOOOOOENDSOOOOOOOOOOOOOOOO */
 }
-
-/* .nav li a:hover {
-  background-color: inherit;
-} */
 
 /* Navigation text colors */
 #blog {
@@ -560,20 +478,11 @@ ul li {
   margin: 25px 0;
 }
 
-/* .post-list {
-  display: inline-block;
-  width: inherit;
-  align-content: flex-end;
-} */
-
 .post-title a {
-  /* display: block; */
-  /* float: left; */
   max-width: 100%;
   word-wrap: normal !important;
   font-weight: 400;
   font-size: 1.5em;
-  /* margin-right: 20px; */
   text-decoration: none;
   color: inherit;
 }
@@ -583,7 +492,6 @@ ul li {
 }
 
 .post-date {
-  /* display: inline-block; */
   float: right;
   font-family: Open Sans;
   color: #d3d3d3;
@@ -600,8 +508,6 @@ ul li {
 
 /* Pagination Style */
 .pagination {
-  /* margin-top: 100px; */
-  /* bottom: 1px; */
   font-family: Open Sans;
   font-weight: 400;
   font-size: 1.1em;
@@ -611,7 +517,6 @@ ul li {
   text-decoration: none;
   font-size: 0.9em !important;
   color: #d3d3d3;
-  /* text-transform: uppercase; */
 }
 
 .pagination a:hover {
@@ -634,9 +539,6 @@ ul li {
 
 .blogcontent {
   font-family: Open Sans;
-  /* font-weight: 300; */
-  /* word-wrap: normal; */
-  /* font-size: 1.2em; */
   text-align: left;
   margin-top: 3%;
 }
@@ -656,8 +558,6 @@ ul li {
 
 /* Footer Styles */
 .footer {
-  /* border-top: 1px solid #f2f2f2; */
-  /* border-bottom: 1px solid #f2f2f2; */
   padding: 15px 0;
   margin: 15px 0 0;
   font-size:  0.8rem;

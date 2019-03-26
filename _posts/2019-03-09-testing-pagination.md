@@ -1,8 +1,10 @@
 ---
 title: Testing Pagination
-updated: 2019-02-15 9:05
+updated: 2019-03-09 9:05
 layout: post
 ---
+
+_Source: [Wikipedia](https://en.wikipedia.org/wiki/Pagination)_
 
 Pagination, also known as Paging, is the process of dividing a document into discrete pages, either electronic pages or printed pages.
 
