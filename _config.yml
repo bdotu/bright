@@ -1,7 +1,7 @@
 # User Settings
 
 # Site Info
-title: "bright"
+title: "bryte"
 description: "another minimalist Jekyll theme."
 author: "Nathan Drake"
 picture: "assets/images/profile.jpeg" # link to your picture goes here
@@ -28,7 +28,7 @@ paginate_path: "/blog/page:num/"
 
 # Build Settings
 # markdown: kramdown
-theme: bright
+# theme: bryte
 
 # Plugins
 plugins:

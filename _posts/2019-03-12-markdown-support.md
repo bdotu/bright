@@ -22,7 +22,7 @@ A link to [Jekyll Now](http://github.com/barryclark/jekyll-now/). A big ass lite
 
 An image, located within /images
 
-![an image alt text]({{ site.baseurl }}/assets/images/bright-screenshot.png "an image title")
+![an image alt text]({{ site.baseurl }}/assets/images/bryte-screenshot.png "an image title")
 
 * A bulletted list
 - alternative syntax 1
